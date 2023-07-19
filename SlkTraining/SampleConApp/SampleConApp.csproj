@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleConApp.Day2.Ex01ArraysExample</StartupObject>
+    <StartupObject>SampleConApp.Day2.Ex03AccessModifiersDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day2\Ex01ArraysExample.cs" />
+    <Compile Include="Day2\Ex02ControlStatements.cs" />
+    <Compile Include="Day2\Ex03AccessModifiersDemo.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonUI.cs" />
     <Compile Include="Program.cs" />
