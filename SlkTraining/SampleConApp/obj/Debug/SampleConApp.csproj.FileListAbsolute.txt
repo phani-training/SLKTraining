@@ -1,0 +1,7 @@
+C:\Trainings\SLK Software\SlkTraining\SampleConApp\bin\Debug\SampleConApp.exe.config
+C:\Trainings\SLK Software\SlkTraining\SampleConApp\bin\Debug\SampleConApp.exe
+C:\Trainings\SLK Software\SlkTraining\SampleConApp\bin\Debug\SampleConApp.pdb
+C:\Trainings\SLK Software\SlkTraining\SampleConApp\obj\Debug\SampleConApp.csproj.AssemblyReference.cache
+C:\Trainings\SLK Software\SlkTraining\SampleConApp\obj\Debug\SampleConApp.csproj.CoreCompileInputs.cache
+C:\Trainings\SLK Software\SlkTraining\SampleConApp\obj\Debug\SampleConApp.exe
+C:\Trainings\SLK Software\SlkTraining\SampleConApp\obj\Debug\SampleConApp.pdb

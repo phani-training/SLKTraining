@@ -1,0 +1,50 @@
+Open the VS Download Website
+Select older versions
+Choose 2019 and click on download
+It will ask for the credentials of Our Outlook account. 
+Select from the list, VS Community Edition and click download. 
+After the Download is completed, Click on it and follow the instructions to install VS Installer.
+With Installer, U can select the required Components(.NET DESKTOP App Development) and continue till the Installer asks to close the Window. 
+If required, U need to restart the Windows OS and select Visual Studio. 
+
+What is .NET Framework?
+Its a platform for developing various kinds of Apps using multiple programming languages that can primarily run on Windows OS, however, U can make the Application execute on multiple platforms also. 
+Developed by MS for creating large scale Applications from Terminal based to Web based as well mobile Platforms. U can develop Database centric Apps, Web Apps, Micro controller Level Apps, Services, Windows based UI Apps. 
+
+U should have Windows OS, which will contain all the required Framework and Compilers required for developing the applications. 
+If U want to develop the App in industrial Scale, then its good to have Visual Studio, an IDE(Tool or a Window) for developing Apps on .NET. Rich Apps with lot of collaborations from various Developers, Debugging, Testing and monitoring should be done for a real time app which is offered by Visual Studio. 
+
+What is the difference b/w VS(IDE) and .NET Framework(Platform) and C#(Language)?
+
+The MOST POPULAR programming language used for developing the .NET Apps is C#. C# has the features of OOP, Similarity with C++ and easy and non confusing syntax, makes it the most prefered programming language for creating .NET Apps. C# is created for .NET by the .NET Team. It will have no confusions while working with it. 
+U can use VB.NET, Python, Cobol, Pascal, Fortron, C++ for creating .NET Apps. 
+
+To learn the language features, U should practise the coding using Visual Studio.
+Project type to select:
+Select Console App(.NET Framework) with C# as the programming language.  
+
+All C# Code is saved with Extension .cs. 
+To View the files of UR project, U can view them in Solution Explorer.
+UR Project itself is saved with an Extension .csproj 
+UR Solution will be saved with an Extension .sln.
+
+UR Code is grouped into Namespaces, to avoid naming conflicts of UR Classes when U work in large projects with multiple developers collaborating UR Work. 
+.NET Framework itself has a large no of ready to use classes which are grouped into Namespaces. System is one such namespace that contain the basic classes and Structures required for your application development. Likewise, U also have 100s of namespaces that contains 100s of classes that can be used to develop UR Application. 
+If U want to consume a Class from a given namespace, U should reference it by using the 'using' and name the namespace. 
+In the code, U can directly refer the class. 
+Main is the Entry point of UR Application which is a part of a class. From here, UR program will execute and terminate after the Main is completed. 
+Console.WriteLine is used to display text on the Output Window(Console).
+Console.ReadLine is used to take inputs from the user in the Output Window. ReadLine method always returns String only
+
+A property of a class is an attribute that defines the charecteristic of the class. A Person will have info about him as Name, Address, Telephone, 
+Propery for a class is usually accessible from anywhere in the program(public). Properties are public in nature. 
+
+Create a Class called Customer with Details like Name, BillNo, Bill Detail, Amount and Date. Take inputs from the User and display the details in the User interface.
+
+
+
+ 
+ 
+
+
+   
