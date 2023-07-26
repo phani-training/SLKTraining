@@ -13,6 +13,7 @@ using System.Threading.Tasks;
  * Rectange: b*h(2 parameters)
  * Circle: r(1 Parameter)
  * Triangle:3 Parameters, int, int, string("Triangle")  
+ * A base class object can be substituted by any of the derived class objects but the converse of it is not possible. 
  */
 
 namespace PolymorphismDemo
