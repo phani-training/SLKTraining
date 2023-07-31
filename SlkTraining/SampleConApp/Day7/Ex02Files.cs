@@ -13,11 +13,11 @@ namespace SampleConApp.Day7
         const string fileName = "test.txt";
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter something to add");
-            string data = Console.ReadLine();
-            //File.WriteAllText(fileName, data);
-            File.AppendAllText(fileName, data);
-            //U cannot remove the contents directly..
+            //Console.WriteLine("Enter something to add");
+            //string data = Console.ReadLine();
+            ////File.WriteAllText(fileName, data);
+            //File.AppendAllText(fileName, data);
+            ////U cannot remove the contents directly..
         }
     }
 }
