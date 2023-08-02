@@ -33,9 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleConApp.Day2.Ex03AccessModifiersDemo</StartupObject>
+    <StartupObject>SampleConApp.Day8.Ex02Events</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +47,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day 3\Ex01MethodsExample.cs" />
+    <Compile Include="Day 3\Ex02NamespacesDemo.cs" />
+    <Compile Include="Day 3\MathClass.cs" />
+    <Compile Include="Day 3\MathClassV2.cs" />
+    <Compile Include="Day 3\MathClassV3.cs" />
+    <Compile Include="Day 3\UnitTest.cs" />
     <Compile Include="Day2\Ex01ArraysExample.cs" />
     <Compile Include="Day2\Ex02ControlStatements.cs" />
     <Compile Include="Day2\Ex03AccessModifiersDemo.cs" />
+    <Compile Include="Day4\Ex01Inheritance.cs" />
+    <Compile Include="Day4\Ex02Polymorphism.cs" />
+    <Compile Include="Day4\InheritanceRecap.cs" />
+    <Compile Include="Day5\Ex01AbstractClasses.cs" />
+    <Compile Include="Day5\Ex02Interfaces.cs" />
+    <Compile Include="Day5\Ex03StaticMembers.cs" />
+    <Compile Include="Day6\Ex01StructsExample.cs" />
+    <Compile Include="Day6\Ex02ExceptionHandling.cs" />
+    <Compile Include="Day7\Doubts.cs" />
+    <Compile Include="Day7\Ex01Collections.cs" />
+    <Compile Include="Day7\Ex02Files.cs" />
+    <Compile Include="Day7\Ex03Indexers.cs" />
+    <Compile Include="Day8\Ex01Delegates.cs" />
+    <Compile Include="Day8\Ex02Events.cs" />
+    <Compile Include="Day8\Ex03Attributes.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Day8\Menu.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

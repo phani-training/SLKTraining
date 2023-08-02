@@ -1,0 +1,5 @@
+﻿~~~~~~~~~~~~~~~~~~EMPLOYEE MONITORING SYSTEM~~~~~~~~~~~~~~~~~~~~
+TO ADD NEW EMPLOYEE------------->PRESS 1
+TO FIND ALL EMPLOYEES----------->PRESS 2
+PS: PRESS ANY OTHER KEY TO EXIT. ANY OTHER KEY IS CONSIDERED AS EXITS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

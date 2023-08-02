@@ -31,8 +31,19 @@ namespace SampleConApp.Day2
             //Console.WriteLine("The Max value is " + maxValue);
             
         }
+
+        static void arraysWithDifferentData()
+        {
+            object[] objects = new object[3];
+            objects[0] = 123;
+            objects[1] = 123.45;
+            objects[2] = "Apple123";
+            foreach(var item in objects)
+                Console.WriteLine(item);
+        }
         static void Main(string[] args)
         {
+            arraysWithDifferentData();
             const int size = 5;
             //Datatype [] arrayName = new DataType[size];
             //Console.WriteLine("Enter the no of Score values U need to fill");
