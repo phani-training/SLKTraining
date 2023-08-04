@@ -17,7 +17,7 @@ namespace SampleConApp.Day8
         public string DefaultGender { get; private set; }
     }
 
-    [Gender("Female")]
+    [Gender("Male")]
     class Ex03Attributes
     {
         [Obsolete("TestFunc1 is obselete, For better performance, Use the new TestFunc2")]
