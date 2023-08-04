@@ -16,8 +16,10 @@ namespace SampleConApp.Day9
 
         public void Update(int index, T element)
         {
-            var found = _collection[index];
-            found = element;
+            //var found = _collection[index];
+            //found = element;
+
+            _collection[index] = element;//More simplified one...
         }
 
         public T FindElement(Predicate<T> finder)
@@ -30,7 +32,7 @@ namespace SampleConApp.Day9
     class Ex02CustomGenericsExample
     {
         static string name = string.Empty;
-        static bool Finder(string value)
+        static bool apple(string value)
         {
             return name == value;
         }
@@ -50,7 +52,7 @@ namespace SampleConApp.Day9
             Console.WriteLine("Enter the fruit Name to find");
             string name = Console.ReadLine();
 
-            var foundRec = collection.FindElement(Finder);
+            var foundRec = collection.FindElement(apple);
             //var foundRec = collection.Find((value) => value == name);
 
             Console.WriteLine("The found Fruit is " + foundRec); 
