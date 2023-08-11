@@ -1,0 +1,6 @@
+﻿~~~~~~~~~~~~~~EMPLOYEE MANAGEMENT SOFTWARE~~~~~~~~~~~~~~~~~~
+TO GET ALL EMPLOYEES------------> PRESS 1
+TO ADD NEW EMPLOYEES------------> PRESS 2
+TO UPDATE EMPLOYEES-------------> PRESS 3
+TO DELETE EMPLOYEES-------------> PRESS 4
+PS: ANY OTHER KEY IS CONSIDERED AS EXIT.....................
