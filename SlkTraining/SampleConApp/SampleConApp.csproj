@@ -33,11 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleConApp.Day8.Ex02Events</StartupObject>
+    <StartupObject>SampleConApp.Day13.Ex01DisconnectedDataAccess</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,6 +54,9 @@
     <Compile Include="Day 3\MathClassV2.cs" />
     <Compile Include="Day 3\MathClassV3.cs" />
     <Compile Include="Day 3\UnitTest.cs" />
+    <Compile Include="Day10\Ex01DataAccess.cs" />
+    <Compile Include="Day12\DataAccessApp.cs" />
+    <Compile Include="Day13\Ex01DisconnectedDataAccess.cs" />
     <Compile Include="Day2\Ex01ArraysExample.cs" />
     <Compile Include="Day2\Ex02ControlStatements.cs" />
     <Compile Include="Day2\Ex03AccessModifiersDemo.cs" />
@@ -71,6 +75,10 @@
     <Compile Include="Day8\Ex01Delegates.cs" />
     <Compile Include="Day8\Ex02Events.cs" />
     <Compile Include="Day8\Ex03Attributes.cs" />
+    <Compile Include="Day9\Ex01ReflectionExample.cs" />
+    <Compile Include="Day9\Ex02GenericsExample.cs" />
+    <Compile Include="Day9\Mathclass.cs" />
+    <Compile Include="Day9\MultiThreading.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonUI.cs" />
     <Compile Include="Program.cs" />
@@ -81,7 +89,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Day12\Menu.txt" />
     <Content Include="Day8\Menu.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

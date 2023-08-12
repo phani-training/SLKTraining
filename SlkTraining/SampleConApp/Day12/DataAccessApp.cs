@@ -56,6 +56,8 @@ namespace SampleConApp.Day12
             static string strConnection = ConfigurationManager.ConnectionStrings["myDbConnection"].ConnectionString;
             const string STRGETALL = "Select * from tblEmployee";
             const string STRINSERT = "Insert into tblEmployee values(@name, @address, @email,@salary, @dept)";
+            const string STRUPDATE = "Update tblEmployee set empName = @name, empAddress = @address, emailId = @email, empSalary = @salary, deptId = @dept where empId = @id";
+
             public void AddNewEmployee(Employee emp)
             {
                 var connection = new SqlConnection(strConnection);
@@ -94,7 +96,7 @@ namespace SampleConApp.Day12
                 {
                     connection.Open();
                     var reader = command.ExecuteReader();
-                    while (reader.Read())
+                    while (reader.Read())//returns false means, no more rows to read....
                     {
                         var emp = new Employee();
                         emp.EmpId = Convert.ToInt32(reader[0]);
@@ -121,10 +123,34 @@ namespace SampleConApp.Day12
                     connection.Close();
                 }
             }
-
+            //set empName = @name, empAddress = @address, emailAddress = @email, empSalary = @salary, deptId = @dept where empId = @id
             public void UpdateEmployee(int id, Employee emp)
             {
-                throw new System.NotImplementedException();
+                var connection = new SqlConnection(strConnection);
+                var command = new SqlCommand(STRUPDATE, connection);
+                command.Parameters.AddWithValue("@name", emp.EmpName);
+                command.Parameters.AddWithValue("@address", emp.EmpAddres);
+                command.Parameters.AddWithValue("@email", emp.EmailAddress);
+                command.Parameters.AddWithValue("@salary", emp.EmpSalary);
+                command.Parameters.AddWithValue("@dept", emp.DeptId);
+                command.Parameters.AddWithValue("@id", id);
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    if(rowsAffected != 1)
+                    {
+                        throw new EmployeeDbException("Updation has failed as no rows were modified");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
             }
         }
     }
@@ -172,7 +198,17 @@ namespace SampleConApp.Day12
 
             private static void updateEmployeeHelper()
             {
-                throw new NotImplementedException();
+                int id = Utilities.GetNumber("Enter the Id of the Employee to update");
+                Employee emp = createEmployee();
+                IDataAccess dataAccess = new ConnectedDataAccess();
+                try
+                {
+                    dataAccess.UpdateEmployee(id, emp);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
 
             private static void addNewEmployeeHelper()
