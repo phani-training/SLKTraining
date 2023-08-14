@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <script src="../js/products.js"></script>
+    <script>
+        const prodDb = new ProductManager();
+        window.addEventListener("load", function(){
+            let data = prodDb.getAllProducts();
+            data.forEach(product => {
+                let content = `<div class="card">
+                        <img src= "${product.pic}"/>
+                        <div class="container">
+                            <h3>${product.name}</h3>
+                            <p>Price: ${product.price}</p>    
+                        </div>
+                        </div>`
+                document.getElementById("data").innerHTML += content;
+            });
+        })
+    </script>
+</head>
+<body>
+    <h1>Product management software</h1>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="AddProduct.html">Add Product</a></li>
+            <li><a href="About">About Us</a></li>
+            <li><a href="Newproducts.html">Upcoming Products</a></li>
+        </ul>
+    </nav>
+    <div id = "data">
+
+    </div>
+</body>
+</html>

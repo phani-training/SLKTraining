@@ -1,0 +1,65 @@
+body{
+    color: brown;
+    background-color: bisque;
+    font-size: 14pt;
+}
+h1{
+    text-transform: capitalize;
+}
+
+ul{
+    list-style-type: none;
+    background-color: burlywood;
+    text-align: center;
+    position: static ;
+    top : 20%;
+    width: 100%;
+}
+li{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+a{
+    display: block;
+    padding: 10px;
+    background-color: blueviolet;
+    color:whitesmoke;
+}
+li a:hover{
+    background-color: red;
+}
+
+footer p{
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.card{
+    width: 30%;
+    height: auto;
+    transition: 0.3s;
+    box-shadow: 0 14px 18px 0 rgba(255,0,0, 0.2);
+    padding: 2px 16px;
+    display: inline-block;
+    border: 2px solid blue;
+    margin: 5px;
+    border-radius:10px;
+    vertical-align: middle;
+}
+img{
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+}
+.container{
+    display: inline-block;
+    padding: 2px 16px;
+    vertical-align: middle;
+}
