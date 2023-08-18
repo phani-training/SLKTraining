@@ -63,3 +63,13 @@ img{
     padding: 2px 16px;
     vertical-align: middle;
 }
+
+.calc{
+    margin: 10px; padding: 10px;
+    width: 35%; height: 500px;
+    box-shadow: -2px 2px, 2px -2px red;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}

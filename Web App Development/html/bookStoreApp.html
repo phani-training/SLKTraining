@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <title>Document</title>
+    <script src="../js/ex04-booksDemo.js"></script>
+    <script>
+       const store = new BookStore();
+
+       function showDetail(id){
+        let selectedBook = store.findBook(id);
+        document.getElementById("txtId").value = selectedBook.id;
+        document.getElementById("txtTitle").value = selectedBook.title;
+        document.getElementById("txtAuthor").value = selectedBook.author;
+        document.getElementById("txtPrice").value = selectedBook.price;
+       }
+       //innerHTML vs. innerText vs. value
+       function onShowAll(){
+        let allBooks = store.getAllBooks();
+        const tbl = document.querySelector("table");
+        tbl.innerHTML = `<tr>
+                    <th>Book Id</th>
+                    <th>Title</th>
+                    <th>Options</th>
+                </tr>`;
+        for(const bk of allBooks){
+            const tr = `<tr>
+                            <td>${bk.id}</td>
+                            <td>${bk.title}</td>
+                            <td><a href="#" onclick="showDetail('${bk.id}')">Edit</a></td>
+                        </tr>`;
+            tbl.innerHTML += tr;
+        }
+       }
+
+       function onUpdate(){
+        //todo: create the book object based on the inputs, call the store's update function and pass the appropriate values as parameters and display the message that the book has been updated. When the user clicks the ShowAll the updated book details should be present.
+       }
+
+       function onAdd(){
+        //take inputs and create a book object. 
+        const id = document.getElementById("txtNewId").value;
+        const title = document.getElementById("txtNewTitle").value;
+        const cost = parseInt(document.getElementById("txtNewPrice").value);
+        const author = document.getElementById("txtNewAuthor").value;
+        const book = new Book(id, title, cost, author);
+        //call the addBook API in the store object and pass this book as arg
+        store.addNewBook(book);
+        onShowAll();
+       }
+       function init(){
+        document.getElementById("aShow").addEventListener("click", onShowAll);
+       }
+       window.addEventListener("load", init); 
+    </script>
+</head>
+<body>
+    <h1>BookStore Application</h1>
+    <hr>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#" id="aShow">Show All</a></li>
+                <li><a href="#" id="aAdd">Add Book</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <div class="calc">
+            <h2>List of Books with Us!!</h2>
+            <hr>
+            <table border="1" style="width: 100%;">
+                <!-- <tr>
+                    <th>Book Id</th>
+                    <th>Title</th>
+                    <th>Options</th>
+                </tr> -->
+            </table>
+        </div>
+        <div class="calc">
+            <h2>Edit Book Details</h2>
+            <hr>
+                <p>Book Id: <input type="text" id="txtId" disabled></p>
+                <p>Book Title: <input type="text" id="txtTitle"></p>
+                <p>Book Author: <input type="text" id="txtAuthor"></p>
+                <p>Book Price:<input type="text" id="txtPrice"></p>
+                <p><button onclick="onUpdate()">Update</button></p>
+            </hr>
+        </div>
+        <div class="calc">
+            <h2>Add Book Details</h2>
+            <hr>
+                <p>Book Id: <input type="text" id="txtNewId"></p>
+                <p>Book Title: <input type="text" id="txtNewTitle"></p>
+                <p>Book Author: <input type="text" id="txtNewAuthor"></p>
+                <p>Book Price:<input type="text" id="txtNewPrice"></p>
+                <p><button onclick="onAdd()">Add</button></p>
+            </hr>
+        </div>
+    </div>
+</body>
+</html>

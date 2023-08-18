@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <title>Document</title>
+    <script>
+        const operation = (first, second, operand) =>{
+            switch (operand) {
+                case "Add": return first + second;
+                case "Subtract": return first - second;
+                case "Multiply": return first * second;
+                case "Divide": return first / second;
+            }
+        }
+        const performOperation = ()=>{
+            //get the values from all the input elements: txtFirst, txtSecond, slOptions
+            const fVal = document.getElementById('txtFirst').value; 
+            const sVal = document.getElementById('txtSecond').value;
+            const operand = document.getElementById('slOptions').value;
+            const result = operation(parseFloat(fVal), parseFloat(sVal), operand);
+            document.getElementById('spResult').innerText = result;    
+        }
+    </script>
+</head>
+<body>
+    <h1>Calc Program</h1>
+    <hr>
+    <div class="calc">
+        <p>
+            <input placeholder="Enter the First value" id="txtFirst"/>
+        </p>
+        <p>
+            <span>Select the Choice: </span>
+            <select id="slOptions">
+                <option>Add</option>
+                <option>Subtract</option>
+                <option>Multiply</option>
+                <option>Divide</option>
+            </select>
+        </p>
+        <p>
+            <input placeholder="Enter the Second value" id="txtSecond"/>
+        </p>
+        <p>
+            <button onclick="performOperation()">Equals</button>
+        </p>
+        <p>
+            <span id="spResult"></span>
+        </p>
+        <p></p>
+    </div>
+</body>
+</html>
