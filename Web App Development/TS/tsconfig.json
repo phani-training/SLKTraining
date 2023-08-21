@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./output",
+        "target": "ES2019"
+    },
+    "include": [
+        "./*.ts"
+    ],
+    "exclude": [
+        "./*.js"
+    ]
+}

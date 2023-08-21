@@ -1,0 +1,3 @@
+How to create TS files and compile them?
+1. Install Nodejs environment. 
+2. Install the TS compiler using NPM.  
