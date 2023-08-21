@@ -1,3 +1,6 @@
 How to create TS files and compile them?
 1. Install Nodejs environment. 
-2. Install the TS compiler using NPM.  
+2. Install the TS compiler using NPM.  => npm install -g typescript 
+3. Create a folder called output, this would be the place where UR JS Files are generated. 
+4. Create a file called tsconfig.json which has the compiler settings for TS. 
+5. Create the files with extension .ts and compile the files at one time using a command: tsc. 
