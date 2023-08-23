@@ -1,4 +1,4 @@
-class Employee {
+export default class Employee {
     empId : number;
     empName : string;
     empAddress : string;

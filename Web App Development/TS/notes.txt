@@ -5,7 +5,6 @@ How to create TS files and compile them?
 4. Create a file called tsconfig.json which has the compiler settings for TS. 
 5. Create the files with extension .ts and compile the files at one time using a command: tsc. 
 
-
 Things to learn: 
 Abstract classes 
 Interfaces 
