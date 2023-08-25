@@ -6,6 +6,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ContentComponent } from './Components/content/content.component';
 import { EmpDataComponent } from './Components/emp-data/emp-data.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EmpDataComponent } from './Components/emp-data/emp-data.component';
     EmpDataComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
